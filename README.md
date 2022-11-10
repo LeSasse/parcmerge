@@ -23,20 +23,26 @@ pip install -e .
 
 It is relatively simple. For help run `parcmerge --help`.
 
-```sh
+```
 usage: parcmerge [-h] parc_one parc_two outname
 
-Merge two parcellation nifti files in volumetric space. This is intended to be used for combination of subcortical (i.e. TIAN) and cortical (i.e. Schaefer) parcellations.
+Merge two parcellation nifti files in volumetric space.
+This is intended to be used for combination of
+subcortical (i.e. TIAN) and cortical (i.e. Schaefer)
+parcellations.
 
 positional arguments:
-  parc_one    The first parcellation. This parcellation gets preference for voxels at which the two parcellations overlap. If there is overlap between the two parcellations, make sure this is the
-              parcellation that is supposed to get preference.
+  parc_one    The first parcellation. This parcellation
+              gets preference for voxels at which the
+              two parcellations overlap. If there is
+              overlap between the two parcellations,
+              make sure this is the parcellation that
+              is supposed to get preference.
   parc_two    The second parcellation.
   outname     The path/filename for the output file
 
 optional arguments:
   -h, --help  show this help message and exit
-
 ```
 
 You can also use the package to merge parcellations in python code:
